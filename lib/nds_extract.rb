@@ -96,7 +96,8 @@ def movies_with_directors_set(source)
     d_name = d_info[:name]
     d_movies = d_info[:movies]
     
-    result << 
+    result << moveis_with_director_key(d_name,d_movies)
+    i +=1 
   # GOAL: For each director, find their :movies Array and stick it in a new Array
   #
   # INPUT:
@@ -108,7 +109,8 @@ def movies_with_directors_set(source)
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.
 end
-
+result
+end
 # ----------------    End of Your Code Region --------------------
 # Don't edit the following code! Make the methods above work with this method
 # call code. You'll have to "see-saw" to get this to work!
