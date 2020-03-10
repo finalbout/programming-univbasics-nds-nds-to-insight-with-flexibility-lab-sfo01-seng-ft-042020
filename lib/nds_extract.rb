@@ -96,7 +96,7 @@ def movies_with_directors_set(source)
     d_name = d_info[:name]
     d_movies = d_info[:movies]
     
-    result << moveis_with_director_key(d_name,d_movies)
+    result << movies_with_director_key(d_name,d_movies)
     i +=1 
   # GOAL: For each director, find their :movies Array and stick it in a new Array
   #
