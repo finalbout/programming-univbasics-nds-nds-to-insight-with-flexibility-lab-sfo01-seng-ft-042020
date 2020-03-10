@@ -66,7 +66,8 @@ def gross_per_studio(collection)
   while i < collection.length do 
     cool = collection[i]
     
-    if !result[cool[:studio]] = cool[:worldwide_gross]
+    if !result[cool[:studio]]
+      result[movie[:studio]] = movie[:worldwide_gross]
   else
     result [cool[:studio]] += cool[:worldwide_gross]
   end
